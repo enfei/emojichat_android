@@ -1,5 +1,7 @@
 package com.mema.muslimkeyboard.activity.group;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -125,6 +127,7 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
         if (Util.getInstance().workingFriends.size() > 0) {
             textViewMembers.setText(String.format("%d Friends Selected", Util.getInstance().workingFriends.size()));
             listviewMembers.setVisibility(View.VISIBLE);
+
         } else {
             textViewMembers.setText("");
             listviewMembers.setVisibility(View.GONE);
