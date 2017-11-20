@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorKeyboardBackground"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_userprofile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@mipmap/profile"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/remoteVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/localVideo"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_menu_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Ringing..."
+            android:textColor="@color/colorTextHint"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/dp5"
+            android:text=""
+            android:textColor="@color/colorTextHint"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/callDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/colorTextHint"
+            android:textSize="16sp" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            card_view:cardCornerRadius="@dimen/dp_10"
+            card_view:cardElevation="3dp">
+
+            <LinearLayout
+                android:id="@+id/bottomPanel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/round_shape_darkgray"
+                    android:orientation="horizontal"
+                    android:paddingBottom="20dp"
+                    android:paddingTop="20dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_end_call">
+
+                    <TextView
+                        android:id="@+id/tv_speaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_speaker_loud"
+                        android:gravity="center"
+                        android:onClick="onClickSpeaker"
+                        android:text="@string/speaker"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_mic"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_mic_off"
+                        android:gravity="center"
+                        android:onClick="onClickMiceOff"
+                        android:text="@string/mute"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/tv_videoCall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:drawableTop="@drawable/ic_video_call"
+                        android:gravity="center"
+                        android:onClick="onClickVideoCall"
+                        android:text="Video Switch"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/hangupButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/round_shape_red"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_end_call" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorKeyboardBackground"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_userprofile"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp_30"
+        android:src="@mipmap/profile" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/remoteUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="14dp"
+            android:text="Sample user"
+            android:textColor="@color/colorTextHint"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/callState"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Incoming call"
+            android:textAllCaps="true"
+            android:textColor="@color/colorTextHint"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Please to answer or decline"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/colorTextHint" />
+
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/dp_30"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_30">
+
+        <ImageView
+            android:id="@+id/declineButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/call_decline_shape_red"
+            android:padding="@dimen/dp_10"
+            android:scaleType="center"
+            android:src="@drawable/ic_end_call" />
+
+        <ImageView
+            android:id="@+id/answerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/call_answer_shape_green"
+            android:padding="@dimen/dp_10"
+            android:scaleType="center"
+            android:src="@drawable/ic_call" />
+
+    </LinearLayout>
+
+</LinearLayout>

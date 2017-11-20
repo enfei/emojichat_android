@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imageSelectionDialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_takePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_take_photo"
+        android:drawablePadding="@dimen/dp_15"
+        android:drawableStart="@mipmap/icon_take_photo"
+        android:onClick="OnTakePhotoClick"
+        android:padding="@dimen/dp_15"
+        android:text="@string/take_photo"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green" />
+
+
+    <TextView
+        android:id="@+id/tv_choosePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/icon_choose_photo"
+        android:drawablePadding="@dimen/dp_15"
+        android:drawableStart="@mipmap/icon_choose_photo"
+        android:onClick="OnChoosePhotoClick"
+        android:padding="@dimen/dp_15"
+        android:text="@string/choose_photo"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/tvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="OnCancelClick"
+        android:padding="@dimen/dp_15"
+
+        android:text="@string/cancel"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/ios_default_button_color" />
+
+</LinearLayout>

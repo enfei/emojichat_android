@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/dp_30"
+        android:scaleType="centerCrop"
+        android:src="@drawable/firstmain_back" />
+
+    <LinearLayout
+        android:id="@+id/privacyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_termandPrivacy"
+            style="@style/WelcomTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_continue"
+            android:layout_gravity="bottom"
+            android:autoLink="web"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dp5"
+            android:linksClickable="true"
+            android:text="@string/by_tappping_continue_msg"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColorLink="@color/ios_default_button_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/dp_15"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtTerms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickTerms"
+                android:text="Terms of Service"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/ios_default_button_color" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" and "
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/txtPrivacy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="OnClickPrivacy"
+                android:text="Privacy Policy"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="@color/ios_default_button_color" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_continue"
+            style="@style/RoundWhiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="@dimen/dp_30"
+            android:layout_marginRight="@dimen/dp_30"
+            android:text="@string/continue_btn" />
+    </LinearLayout>
+</RelativeLayout>

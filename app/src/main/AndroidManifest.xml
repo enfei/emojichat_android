@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mema.muslimkeyboard">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.WRITE_PROFILE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service android:name="com.mema.muslimkeyboard.sinchaudiocall.SinchService" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <!--
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        -->
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.Welcome"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.SignIn"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"
+            android:windowSoftInputMode="stateAlwaysHidden">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.SignUp"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.soundcloud.android.crop.CropImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.AddUserActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.group.GroupChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.group.NewGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.profile.CurrentUserProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.ContactUsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.ChangePwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.ForgotPwdActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.group.GroupInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.FriendActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.group.GroupEditActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.group.GroupAddActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+        <activity android:name="com.mema.muslimkeyboard.activity.PhotoActivity" />
+
+        <service android:name="com.mema.muslimkeyboard.service.FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="com.mema.muslimkeyboard.service.FirebaseIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service android:name="com.mema.muslimkeyboard.contacts.PostService"
+            android:exported="false"/>
+
+        <service android:name="com.mema.muslimkeyboard.contacts.SyncContactService"
+            android:exported="false"/>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="a1c4a349e92eb0b342dc93dfe94dbd3274f9980f" />
+
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.VerificationCodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.profile.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.SignInActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.SplashScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.sinchaudiocall.CallScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.sinchaudiocall.PlaceCallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.sinchaudiocall.IncomingCallScreenActivity"
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.sinchaudiocall.CallVideoScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.mema.muslimkeyboard.activity.BlockListActivity"
+            android:label="@string/title_activity_block_list"
+            android:theme="@style/AppTheme"></activity>
+        <activity android:name="com.mema.muslimkeyboard.activity.InviteActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

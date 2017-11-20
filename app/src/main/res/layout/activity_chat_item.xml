@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/receiver_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image_receiver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@mipmap/profile" />
+
+        <TextView
+            android:id="@+id/text_view_receiver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/profile_image_receiver"
+            android:background="@drawable/chat_shape_white"
+            android:padding="10dp"
+            android:text="Mr. Nabee,nice to meet you" />
+
+        <TextView
+            android:id="@+id/text_view_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_view_receiver"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/text_view_receiver"
+            android:text="07:30 PM"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sender_text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/receiver_text_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/text_view_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:autoLink="all"
+            android:background="@drawable/chat_shape_green"
+            android:linksClickable="true"
+            android:padding="10dp"
+            android:text="Mr. Nabee,nice to meet you"
+            android:textColorLink="@color/colorTextHint" />
+
+        <TextView
+            android:id="@+id/text_view_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/text_view_sender"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/text_view_sender"
+            android:text="07:30 PM"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sender_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender_text_layout"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/imageLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/sender_imoji_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/sender_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_imageView_sender_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageLayout"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/imageLayout"
+            android:text="07:30 PM"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/receiver_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sender_image_layout"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_imageView_receiver"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:src="@mipmap/profile" />
+
+        <RelativeLayout
+            android:id="@+id/imageLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_toRightOf="@+id/profile_imageView_receiver"
+            android:background="@drawable/chat_shape_white"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/receiver_imoji_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/receiver_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/text_imageView_receiver_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageLayout1"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/imageLayout1"
+            android:text="07:30 PM"
+            android:textColor="@color/dark_gray"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

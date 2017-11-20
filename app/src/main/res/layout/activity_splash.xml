@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/welcome"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="120dip"
+                android:gravity="center"
+                android:text="Welcome!"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dip"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="You’re ready to start using the Muslim\nEmoji Keyboard App Now with\nin app messaging!"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dip" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="Featuring"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dip"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center"
+                android:text="Muslim Emoji\nIn App Messaging\nConnect with your friends\nKeyboard themes\nKeyboard integration\nSend emoji with messaging apps\nShare on social media"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dip" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:gravity="center"
+                android:text="Get Started"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dip"
+                android:textStyle="bold|normal" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

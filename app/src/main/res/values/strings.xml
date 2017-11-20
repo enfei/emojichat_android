@@ -1,0 +1,99 @@
+<resources>
+
+    <!--<string name="app_id">56246</string>
+    <string name="auth_key">UpEYkRsaKesTCSm</string>
+    <string name="auth_secret">4HsRbndQfBjEwfn</string>
+    <string name="account_key">dxHvgUr6ETJkhpzBR4SM</string>
+    <string name="api_domain">https://api.quickblox.com</string>
+    <string name="chat_domain">chat.quickblox.com</string>-->
+
+
+    <string name="app_name">Muslim Emoji Message</string>
+    <string name="please_wait">Please wait…</string>
+
+    <string name="dlg_error">Error</string>
+    <string name="dlg_ok">OK</string>
+    <string name="dlg_cancel">Cancel</string>
+    <string name="dlg_loading">Loading…</string>
+    <string name="dlg_choose_image_from">Select photo from…</string>
+    <string name="dlg_retry">Retry</string>
+
+
+    <string name="tv_name">Sajawal Malik</string>
+    <string name="tv_your_profile">Your Profile</string>
+    <string name="tv_notification">Notifications</string>
+    <string name="tv_emoji">Muslim Emoji</string>
+    <string name="tv_privacy">Privacy</string>
+    <string name="tv_help">Help &amp; About Us</string>
+    <string name="tv_logout">Logout</string>
+
+    <string name="tv_contacts">Contacts</string>
+    <string name="tv_search">Search friends by Username / Email</string>
+
+    <string name="tv_settings">Settings</string>
+    <string name="tv_profile">Profile</string>
+    <string name="tv_chat">Group Chat</string>
+
+    <string name="tv_username">Username</string>
+    <string name="tv_email">Email</string>
+    <string name="tv_change_pass">Change Password</string>
+    <string name="tv_login">login</string>
+
+    <string name="tv_conditions">By tapping "Register" you agree to the Terms of Service and Privacy Policy</string>
+    <string name="laurie_paragraph">By tapping "Register" you agree to the<![CDATA[<b><font color=#000FF> Terms of Service </b>]]>and<![CDATA[<b><font color=#000FF> Privacy Policy.</b>]]></string>
+
+
+    <string name="exception">com.quickblox.core.exception.QBResponseException: login has already been taken.</string>
+
+    <string name="tv_mute">Mute</string>
+
+    <string name="ads_app_id">ca-app-pub-3535011541485588~7894779115</string>
+    <string name="ads_unit_id">ca-app-pub-3535011541485588/1980231162</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3535011541485588/8022895333</string>
+    <string name="welcome_to_muslim_emoji_messaging_app">Welcome to \n Muslim Emoji \n Messaging App</string>
+    <string name="a_new_way_to_connect">A New Way To Connect</string>
+    <string name="by_tappping_continue_msg">By Tapping \"Continue\" you agree to our</string>
+    <string name="continue_btn">Continue</string>
+    <string name="cancel">Cancel</string>
+    <string name="enter_your_mobile">Enter Your mobile</string>
+    <string name="region">Region</string>
+    <string name="signup">SignUp</string>
+    <string name="mobile_number_confirmation">Mobile Number \nConfirmation</string>
+    <string name="sendvefication_code_msg">We will send a verification code \nto the following number: \n </string>
+    <string name="back">Back</string>
+    <string name="verification_code_has_been">Verification code has been \nsent to your phone</string>
+    <string name="phone">Phone</string>
+    <string name="code">Code</string>
+    <string name="enter_code">Enter Code</string>
+    <string name="submit">Submit</string>
+    <string name="didt_receive_code_text">Didn\'t receive verification code yet?</string>
+    <string name="number_phone">Number Phone</string>
+    <string name="resend">Resend</string>
+    <string name="phone_call">Phone Call</string>
+    <string name="complate_your_profile_txt">Complete your profile so that \n friends can recognize you</string>
+    <string name="full_name">Full name</string>
+    <string name="enter_name">Enter name</string>
+    <string name="next">Next</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="signin">SignIn</string>
+    <string name="login_via_mobile">Login via Mobile</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="enter_password">Enter password</string>
+    <string name="create_password">Create Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">Confirm</string>
+    <string name="set_new_password">Set New Password</string>
+    <string name="block_list">Block List</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="photo_video_libary"><![CDATA[Photo & Video Library]]></string>
+    <string name="title_location_permission">Location Permission</string>
+    <string name="text_location_permission">Allow location permission to send your location to your friend</string>
+    <string name="ok">ok</string>
+    <string name="copy">Copy</string>
+    <string name="speaker">Speaker</string>
+    <string name="mute">Mute</string>
+    <string name="video_call">Video Call</string>
+    <string name="title_activity_block_list">BlockListActivity</string>
+</resources>

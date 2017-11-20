@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reVerificationLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_verification_resend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="setVerification_resend"
+        android:padding="@dimen/dp_15"
+        android:text="@string/resend"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/txt_verification_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="setVerification_call"
+        android:padding="@dimen/dp_15"
+        android:text="@string/phone_call"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/green" />
+
+    <TextView
+        android:id="@+id/txt_cancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="setCancel"
+        android:padding="@dimen/dp_15"
+        android:text="@string/cancel"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="@color/black" />
+</LinearLayout>

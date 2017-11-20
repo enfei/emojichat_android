@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_item_divider_width">5dp</dimen>
+    <dimen name="default_item_radius">3dp</dimen>
+    <dimen name="dp5">5dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_25">25dp</dimen>
+</resources>

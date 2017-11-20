@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_user"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mema.muslimkeyboard.activity.AddUserActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dip"
+            android:text="Add Friends"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:src="@mipmap/close" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cfd9e0" />
+
+    <RelativeLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:src="@mipmap/search" />
+
+        <EditText
+            android:id="@+id/edt_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/img_cancel_search"
+            android:layout_toRightOf="@+id/img_search"
+            android:backgroundTint="@color/white"
+            android:hint="Search Friend"
+            android:singleLine="true"
+            android:textColor="@color/dark_gray"
+            android:textColorHint="#bebebe"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/img_cancel_search"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@+id/img_mic"
+            android:scaleType="center"
+            android:src="@mipmap/reject" />
+
+        <ImageView
+            android:id="@+id/img_mic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="22dp"
+            android:src="@mipmap/icon_mic" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cfd9e0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fafafa"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/tvFindFriends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text=""
+            android:textColor="#86898b"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#cfd9e0" />
+
+    <ListView
+        android:id="@+id/list_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:divider="@null"
+        android:dividerHeight="0dp">
+
+    </ListView>
+    <!--<ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/second_layout"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:padding="10dp" />-->
+    <!--
+                <ListView
+                    android:id="@+id/list_add_friends"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/edt_search"
+                    android:layout_marginTop="30dp"
+                    android:scrollbars="none"
+                    />-->
+</LinearLayout>
+
+
+    <!--<ListView
+        android:id="@+id/list_add_friends"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_search"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        />-->
+
+    <!-- <RelativeLayout
+         android:id="@+id/menu_layout"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="5dp"
+         android:visibility="gone">
+
+         <include layout="@layout/menu_layout" />
+     </RelativeLayout>
+
+     <ListView
+         android:id="@+id/list"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:layout_below="@+id/second_layout"
+         android:background="#ffffff"
+         android:divider="#ffffff"
+         android:padding="10dp" />
+ --><!-- <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/second_layout"
+        android:background="#ffffff"
+        android:divider="#ffffff"
+        android:padding="10dp" />-->
+

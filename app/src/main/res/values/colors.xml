@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5EC450</color>
+    <color name="colorPrimaryDark">#5EC450</color>
+    <color name="colorAccent">#5EC450</color>
+    <color name="colorBackground">#5EC450</color>
+    <color name="colorWhite">#ffffff</color>
+
+    <color name="black">#000000</color>
+    <color name="green">#5EC450</color>
+    <color name="white">#ffffff</color>
+    <color name="gray">#D3D3D3</color>
+    <color name="dark_gray">#86898b</color>
+    <color name="red">#ff0000</color>
+
+    <color name="ios_default_button_color">#0076FF</color>
+
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="colorDarkGray">#555555</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextHint">#007aff</color>
+    <color name="colorIOS">#efeff4</color>
+    <color name="colorKeyboardBackground">#eceff1</color>
+
+    <color name="default_indicator_on">#FFFFFF</color>
+    <color name="default_indicator_off">#333333</color>
+    <color name="default_indicator_light_on">#111111</color>
+    <color name="default_indicator_light_off">#777777</color>
+    <color name="indicator_selected">#363B3E</color>
+    <color name="indicator_normal">#979797</color>
+
+    <!--Call Screen Colors-->
+    <color name="end_call_red">#FF5252</color>
+    <color name="receive_call_green">#00E676</color>
+    <color name="call_screen_dialog_grey">#2E414F</color>
+</resources>

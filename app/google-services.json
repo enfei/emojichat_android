@@ -1,0 +1,267 @@
+{
+  "project_info": {
+    "project_number": "759905974451",
+    "firebase_url": "https://muslim-223b1.firebaseio.com",
+    "project_id": "muslim-223b1",
+    "storage_bucket": "muslim-223b1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759905974451:android:b9b2307f9fbf5af6",
+        "android_client_info": {
+          "package_name": "app.mubeen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759905974451-tri6rg42jgm2ee6263rsqtrqaum5b7g5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.mubeen",
+            "certificate_hash": "f8947f479a1d681fb5fb364ba0606ceb60684772"
+          }
+        },
+        {
+          "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfEFOxBiX0eY5zj-oGJjpa40Fbl9n8O8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759905974451-pluqeskjel0s612qbkmffhinunqvoh68.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mema.muslimojis",
+                "app_store_id": "1300976447"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759905974451:android:f3c452659c70fac9",
+        "android_client_info": {
+          "package_name": "com.dev.wangri.muslimkeyboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759905974451-uukq0qo3u3qfdothc48vslriiucfvbdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.wangri.muslimkeyboard",
+            "certificate_hash": "f65ebd089aa7370e292a88afca7a15ea586a38e1"
+          }
+        },
+        {
+          "client_id": "759905974451-sfugvba848p9v2fm1of604fn0t6r5g45.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.wangri.muslimkeyboard",
+            "certificate_hash": "76709a8d4f2b9895e4fb0ff9dc2a0b0aaad52fb9"
+          }
+        },
+        {
+          "client_id": "759905974451-0k5erugihqfpppd838cvfjm7vgltv9os.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.wangri.muslimkeyboard",
+            "certificate_hash": "4f74bf48c9a5fd1c03c249d5ae42dc87e61abb31"
+          }
+        },
+        {
+          "client_id": "759905974451-4qk3nbbe45u0b7g4vf99i33baj2sr7le.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.wangri.muslimkeyboard",
+            "certificate_hash": "e76074ddae8c96e5d42efb13edd0bea0135aea2f"
+          }
+        },
+        {
+          "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfEFOxBiX0eY5zj-oGJjpa40Fbl9n8O8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759905974451-pluqeskjel0s612qbkmffhinunqvoh68.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mema.muslimojis",
+                "app_store_id": "1300976447"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759905974451:android:bbe4b42ee59f872d",
+        "android_client_info": {
+          "package_name": "com.dev.cloudstream.muslimkeyboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759905974451-10mpvruv0tqn76680ugq3fs8jugdr4vc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dev.cloudstream.muslimkeyboard",
+            "certificate_hash": "7c2d3efe755789a3beeec56d6e4b5bcf060da01c"
+          }
+        },
+        {
+          "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfEFOxBiX0eY5zj-oGJjpa40Fbl9n8O8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759905974451-pluqeskjel0s612qbkmffhinunqvoh68.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mema.muslimojis",
+                "app_store_id": "1300976447"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759905974451:android:2791568ad744d36e",
+        "android_client_info": {
+          "package_name": "com.mema.muslimkeyboard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759905974451-voa8n9ljf89jm7gvj36ie9a68ap4pdvo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mema.muslimkeyboard",
+            "certificate_hash": "91284ccd142ad02a73db9f2fc398d2e4f89c94a9"
+          }
+        },
+        {
+          "client_id": "759905974451-tuulsfvr4c7hmkjtpu6rmphcta0a8iaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mema.muslimkeyboard",
+            "certificate_hash": "a790cd1050bf86670f0a7e124c9470b7ced683c6"
+          }
+        },
+        {
+          "client_id": "759905974451-5u30g2clfm3u2rkf2p4c9gv7bqihmd23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mema.muslimkeyboard",
+            "certificate_hash": "fd3873911d7f76449c6b367b459859fca771718f"
+          }
+        },
+        {
+          "client_id": "759905974451-bd44am47cdd6mo95u19i0loh8r70elsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mema.muslimkeyboard",
+            "certificate_hash": "f65ebd089aa7370e292a88afca7a15ea586a38e1"
+          }
+        },
+        {
+          "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcfEFOxBiX0eY5zj-oGJjpa40Fbl9n8O8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759905974451-622rld4hmq59v35adipgj8g5j8baj0m7.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "759905974451-pluqeskjel0s612qbkmffhinunqvoh68.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mema.muslimojis",
+                "app_store_id": "1300976447"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
