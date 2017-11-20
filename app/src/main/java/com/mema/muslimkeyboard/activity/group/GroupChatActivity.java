@@ -26,6 +26,7 @@ import com.mema.muslimkeyboard.utility.Util;
 import com.mema.muslimkeyboard.utility.models.FirebaseValueListener;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.Locale;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -45,6 +46,7 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
     GroupFriendListAdapter adapter;
     GroupMembersSmallAdapter memberAdapter;
     ImageView ivCancelSearch;
+    ArrayList<User> filterUserArraylist;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,7 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
         setContentView(R.layout.activity_group_chat);
 
         Util.getInstance().workingFriends.clear();
+        filterUserArraylist = new ArrayList<>();
         initUI();
         getFriends();
     }
@@ -129,7 +132,8 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
     }
 
     public void getFriends() {
-        adapter = new GroupFriendListAdapter(this);
+        getfilterUserList(edtSearch.getText().toString().toLowerCase(Locale.getDefault()));
+        adapter = new GroupFriendListAdapter(this,filterUserArraylist);
         listviewFriends.setAdapter(adapter);
 
         memberAdapter = new GroupMembersSmallAdapter(this);
@@ -139,7 +143,8 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
             @Override
             public void onUpdate() {
                 String text = edtSearch.getText().toString().toLowerCase(Locale.getDefault());
-                adapter.filter(text);
+                getfilterUserList(text);
+                adapter.notifyDataSetChanged();
             }
         });
 
@@ -162,7 +167,8 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
             public void afterTextChanged(Editable arg0) {
                 // TODO Auto-generated method stub
                 String text = edtSearch.getText().toString().toLowerCase(Locale.getDefault());
-                adapter.filter(text);
+                getfilterUserList(text);
+                adapter.notifyDataSetChanged();
 
                 if (TextUtils.isEmpty(text))
                     ivCancelSearch.setVisibility(View.INVISIBLE);
@@ -180,6 +186,21 @@ public class GroupChatActivity extends BaseActivity implements View.OnClickListe
                 // TODO Auto-generated method stub
             }
         });
+    }
+
+    public void getfilterUserList(String charText) {
+        charText = charText.toLowerCase(Locale.getDefault());
+        filterUserArraylist.clear();
+        if (charText.length() == 0) {
+            filterUserArraylist.addAll(FirebaseManager.getInstance().groupFriendList);
+        } else {
+            for (User wp : FirebaseManager.getInstance().groupFriendList) {
+                if (wp.username != null && !wp.username.equals(""))
+                    if (wp.username.toLowerCase().contains(charText)) {
+                        filterUserArraylist.add(wp);
+                    }
+            }
+        }
     }
 
     public class GroupMembersSmallAdapter extends RecyclerView.Adapter<GroupMemberViewHolder> {

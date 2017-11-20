@@ -26,10 +26,11 @@ import de.hdodenhof.circleimageview.CircleImageView;
 public class GroupFriendListAdapter extends BaseAdapter {
     Context context1;
     LayoutInflater inflter;
-    private ArrayList<User> arraylist = new ArrayList<>();// array create for filter
+    public ArrayList<User> arraylist = new ArrayList<>();// array create for filter
 
-    public GroupFriendListAdapter(Context context) {
+    public GroupFriendListAdapter(Context context, ArrayList<User> arraylist) {
         this.context1 = context;
+        this.arraylist = arraylist;
         inflter = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
@@ -78,23 +79,23 @@ public class GroupFriendListAdapter extends BaseAdapter {
         return view;
     }
 
-    // fiter alphabate search name
-    public void filter(String charText) {
-        charText = charText.toLowerCase(Locale.getDefault());
-        arraylist.clear();
-        if (charText.length() == 0) {
-            arraylist.addAll(FirebaseManager.getInstance().groupFriendList);
-        } else {
-            for (User wp : FirebaseManager.getInstance().groupFriendList) {
-                if (wp.username != null && !wp.username.equals(""))
-                    if (wp.username.toLowerCase().contains(charText)) {
-                        arraylist.add(wp);
-                    }
-            }
-        }
-        notifyDataSetChanged();
-    }
-
+//    // fiter alphabate search name
+//    public void filter(String charText) {
+//        charText = charText.toLowerCase(Locale.getDefault());
+//        arraylist.clear();
+//        if (charText.length() == 0) {
+//            arraylist.addAll(FirebaseManager.getInstance().groupFriendList);
+//        } else {
+//            for (User wp : FirebaseManager.getInstance().groupFriendList) {
+//                if (wp.username != null && !wp.username.equals(""))
+//                    if (wp.username.toLowerCase().contains(charText)) {
+//                        arraylist.add(wp);
+//                    }
+//            }
+//        }
+//        notifyDataSetChanged();
+//    }
+//
     private class ViewHolder {
         public TextView name;
         public CircleImageView circleImageView;
